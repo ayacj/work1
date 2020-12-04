@@ -1,0 +1,32 @@
+@media screen and (max-width: 780px){
+    .app-wrap.main{
+        .app-container{
+            width: 100%; 
+            .menu-trigger-btn{
+                display: block;
+            }
+            .sidebar{
+                left:-100%;
+                width: 100%;
+                .close-btn{
+                display: block;
+                }
+                .header{
+                    display: none;
+                }
+                .nav{
+                    padding-top: 70px;
+                }
+            }
+            .app-content{
+                padding-left: 0; 
+                height: 100%;
+            }
+            &.show-menu .sidebar{
+                left:0;
+            }
+        }
+        
+    }
+    
+}

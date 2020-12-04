@@ -1,0 +1,28 @@
+@media screen and (max-width: 780px) {
+  .app-wrap.main .app-container {
+    width: 100%;
+  }
+  .app-wrap.main .app-container .menu-trigger-btn {
+    display: block;
+  }
+  .app-wrap.main .app-container .sidebar {
+    left: -100%;
+    width: 100%;
+  }
+  .app-wrap.main .app-container .sidebar .close-btn {
+    display: block;
+  }
+  .app-wrap.main .app-container .sidebar .header {
+    display: none;
+  }
+  .app-wrap.main .app-container .sidebar .nav {
+    padding-top: 70px;
+  }
+  .app-wrap.main .app-container .app-content {
+    padding-left: 0;
+    height: 100%;
+  }
+  .app-wrap.main .app-container.show-menu .sidebar {
+    left: 0;
+  }
+}

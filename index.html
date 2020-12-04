@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayacj</title>
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/rwd.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/0ee600ef77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app-wrap main">
+        <div class="app-container">
+            <div class="menu-trigger-btn">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <aside class="sidebar">
+                <div class="close-btn">
+                    <i class="fas fa-times fa-2x"></i>
+                </div>
+                <header class="header">
+                    <a class="logo" href="#" alt="aya"><img src="/public/images/logo.png"></a>
+                </header>
+                <nav class="nav">
+                    <ul class="items">
+                        <li class="item"><a href="#">首頁</a></li>
+                        <li class="item"><a href="#">商品</a></li>
+                        <li class="item"><a href="#">公告</a></li>
+                        <li class="item"><a href="#">設定</a></li>
+                        <li class="item"><a href="#">客服</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <div class="app-content">
+                <div class="main-wrap">
+                    <div class="top-bar">
+                        <ul class="path">
+                            <li><a href="#">登入</a></li>
+                            <li><a href="#">註冊</a></li>
+                            <li><a href="#">忘記密碼</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-wrap">
+                        <div class="main-content">
+                            <div class="banner">
+                                <ul class="items">
+                                    <li class="item">
+                                        <a href="#"><img src="/public/images/banner.png" alt="banner"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="marquee">
+                                <i class="fas fa-bullhorn"></i><a href="#">客服時段為 11:00~21:00</a>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#"><div class="btn">
+                                    <i class="far fa-hand-point-up"></i>立刻開始
+                                </div></a>
+                            </div>
+                            <footer class="app-footer">
+                                Copyright © Aya.
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(function(){
+           $(".menu-trigger-btn").on("click", function(){
+            $(".app-container").addClass("show-menu");
+           });
+           $(".close-btn").on("click", function(){
+            $(".app-container").removeClass("show-menu");
+           });
+        });
+
+        
+    </script>
+</body>
+</html>

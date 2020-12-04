@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("/public/images/bg.jpg") center center fixed no-repeat;
+  background-size: cover;
+}
+
+html, body {
+  height: 100vh;
+}
+
+section::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track,
+main::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+section::-webkit-scrollbar,
+div::-webkit-scrollbar,
+main::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+section::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb,
+main::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.app-wrap.main {
+  height: 100vh;
+}
+.app-wrap.main .app-container {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 2000px;
+  height: 100%;
+}
+.app-wrap.main .menu-trigger-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: none;
+}
+.app-wrap.main .menu-trigger-btn .fa-bars {
+  color: #fff;
+  padding: 10px 10px;
+}
+.app-wrap.main .sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.404);
+  z-index: 1;
+}
+.app-wrap.main .sidebar .close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 6;
+  display: none;
+}
+.app-wrap.main .sidebar .close-btn .fa-times {
+  color: #0b3829;
+  padding: 20px 50px;
+  box-sizing: border-box;
+}
+.app-wrap.main .sidebar .header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.842);
+  height: 200px;
+}
+.app-wrap.main .sidebar .header .logo img {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  top: 0;
+  padding: 35px 0;
+  text-align: center;
+}
+.app-wrap.main .sidebar .nav .items .item {
+  border-top: 1px solid rgba(255, 255, 255, 0.767);
+}
+.app-wrap.main .sidebar .nav .items .item a {
+  display: block;
+  text-align: center;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+}
+.app-wrap.main .sidebar .nav .items .item a:hover {
+  background: rgba(255, 255, 255, 0.534);
+  color: rgba(0, 0, 0, 0.753);
+}
+.app-wrap.main .app-content {
+  position: relative;
+  padding-left: 210px;
+}
+.app-wrap.main .app-content .main-wrap {
+  position: relative;
+  padding-top: 60px;
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+}
+.app-wrap.main .app-content .main-wrap .top-bar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.404);
+}
+.app-wrap.main .app-content .main-wrap .top-bar .path {
+  width: 100%;
+  font-size: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.app-wrap.main .app-content .main-wrap .top-bar .path li {
+  margin: 0 10px;
+}
+.app-wrap.main .app-content .main-wrap .top-bar .path a {
+  text-decoration: none;
+  color: #0f7c3c;
+  font-size: 15px;
+  line-height: 52px;
+  padding: 8px 10px;
+  background-color: #ffffffb9;
+  border: 1px solid #767da8;
+  border-radius: 0.3rem;
+}
+.app-wrap.main .app-content .main-wrap .top-bar .path a:hover {
+  background-color: #0a331e;
+  color: #fff;
+}
+.app-wrap.main .content-wrap {
+  height: 100%;
+  background: transparent;
+  overflow: auto;
+}
+.app-wrap.main .content-wrap .main-content {
+  height: 200%;
+}
+.app-wrap.main .content-wrap .main-content .banner {
+  position: relative;
+}
+.app-wrap.main .content-wrap .main-content .banner .item img {
+  width: 100%;
+  height: 300px;
+}
+.app-wrap.main .content-wrap .main-content .banner .item::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.39);
+}
+.app-wrap.main .content-wrap .main-content .marquee {
+  color: #fff;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.app-wrap.main .content-wrap .main-content .marquee a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.app-wrap.main .content-wrap .main-content .btn-wrap {
+  text-align: center;
+}
+.app-wrap.main .content-wrap .main-content .btn-wrap .btn {
+  display: inline-block;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  margin: 10px 0;
+  background-color: #2b468198;
+  border-color: #2a155a;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 0.3rem;
+}
+.app-wrap.main .content-wrap .main-content .btn-wrap .btn .far {
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.app-wrap.main .content-wrap .main-content .btn-wrap .btn:hover {
+  background-color: #2b4681;
+}
+.app-wrap.main .app-footer {
+  color: rgba(255, 255, 255, 0.637);
+  position: relative;
+  text-align: right;
+  right: 5px;
+  font-size: 15px;
+  padding: 15px 10px;
+  box-sizing: border-box;
+}
