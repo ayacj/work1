@@ -149,15 +149,13 @@ html, body{
             height: 100%;
             overflow: auto;
             .main-content{
-                height: 100%;
+             height: 100%;
             .banner{
                 position: relative;
-                .item{
-                    img{
-                    width: 100%;
-                    height: 300px;
-                    }
-                    &::after{
+                width: 100%;
+                height: 300px;
+                background-image: url("/public/images/banner.png");
+                &::after{
                     position: absolute;
                     content: "";
                     display: block;
@@ -166,8 +164,7 @@ html, body{
                     width: 100%;
                     height: 300px;
                     background-color: rgba(0, 0, 0, 0.39);
-                    } 
-                }
+                } 
             }  
 
             .marquee{
@@ -193,8 +190,16 @@ html, body{
                 margin: auto;
                 width: 800px;
                 height: 300px;
-                background-color: rgba(252, 253, 253, 0.918);
+                background-color: rgba(255, 255, 255, 0.925);
                 z-index: 7;
+                .text{
+                    text-align: center;
+                    font-size: 30px;
+                    padding: 30px;
+                    box-sizing: border-box;
+                    background-image: url("/public/images/bg.jpg");
+                    color: #fff;
+                }
                 }
                 .pop-before{
                     position: fixed;
@@ -235,7 +240,7 @@ html, body{
             }
 
             .content{
-                min-height: 200vh;;
+                min-height: 100vh;;
             }
          }
 
