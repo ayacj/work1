@@ -17,9 +17,6 @@
                 <i class="fas fa-bars fa-2x"></i>
             </div>
             <aside class="sidebar">
-                <div class="close-btn">
-                    <i class="fas fa-times fa-2x"></i>
-                </div>
                 <header class="header">
                     <a class="logo" href="#" alt="aya"><img src="/public/images/logo.png"></a>
                 </header>
@@ -32,6 +29,9 @@
                         <li class="item"><a href="#">客服</a></li>
                     </ul>
                 </nav>
+                <div class="close-btn">
+                    <i class="fas fa-times fa-2x"></i>
+                </div>
             </aside>
 
             <div class="app-content">
@@ -53,19 +53,30 @@
                                     </li>
                                 </ul>
                             </div>
+
                             <div class="marquee">
-                                <i class="fas fa-bullhorn"></i><a href="#">客服時段為 11:00~21:00</a>
+                                <i class="fas fa-bullhorn"></i><a href="#">客服時段為 10:00~21:00</a>
                             </div>
-                            <div class="btn-wrap">
+
+                            <div class="app-pop-up">
+                                <div class="pop-up"></div>
+                                <div class="pop-before"></div>
+                            </div>
+                            <section class="content">
+
+                            </section>
+                            <div class="action-btns">
                                 <a href="#"><div class="btn">
                                     <i class="far fa-hand-point-up"></i>立刻開始
                                 </div></a>
                             </div>
+
                             <footer class="app-footer">
                                 Copyright © Aya.
                             </footer>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -80,6 +91,20 @@
            $(".close-btn").on("click", function(){
             $(".app-container").removeClass("show-menu");
            });
+        });
+
+        $(function(){  
+          $(".marquee").on("click",function(){
+            $(".app-pop-up").addClass("show");
+          });
+  
+          $('.marquee-close').on("click",function(){
+            $(".app-pop-up").removeClass("show");
+          });
+
+          $('.pop-before').on("click",function(){
+            $(".app-pop-up").removeClass("show");
+          });
         });
 
         

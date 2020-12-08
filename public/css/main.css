@@ -97,14 +97,16 @@ body::-webkit-scrollbar-thumb {
   box-sizing: border-box;
   text-decoration: none;
   color: #fff;
+  font-size: 18px;
 }
 .app-wrap.main .sidebar .nav .items .item a:hover {
   background: rgba(255, 255, 255, 0.534);
-  color: rgba(0, 0, 0, 0.753);
+  color: rgba(10, 49, 65, 0.753);
 }
 .app-wrap.main .app-content {
   position: relative;
   padding-left: 210px;
+  height: 100%;
 }
 .app-wrap.main .app-content .main-wrap {
   position: relative;
@@ -145,11 +147,10 @@ body::-webkit-scrollbar-thumb {
 }
 .app-wrap.main .content-wrap {
   height: 100%;
-  background: transparent;
   overflow: auto;
 }
 .app-wrap.main .content-wrap .main-content {
-  height: 200%;
+  height: 100%;
 }
 .app-wrap.main .content-wrap .main-content .banner {
   position: relative;
@@ -179,10 +180,36 @@ body::-webkit-scrollbar-thumb {
   padding: 0 10px;
   box-sizing: border-box;
 }
-.app-wrap.main .content-wrap .main-content .btn-wrap {
+.app-wrap.main .content-wrap .main-content .app-pop-up {
+  display: none;
+}
+.app-wrap.main .content-wrap .main-content .app-pop-up .pop-up {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 800px;
+  height: 300px;
+  background-color: rgba(252, 253, 253, 0.918);
+  z-index: 7;
+}
+.app-wrap.main .content-wrap .main-content .app-pop-up .pop-before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  height: 100vh;
+}
+.app-wrap.main .content-wrap .main-content .app-pop-up.show {
+  display: block;
+}
+.app-wrap.main .content-wrap .main-content .action-btns {
   text-align: center;
 }
-.app-wrap.main .content-wrap .main-content .btn-wrap .btn {
+.app-wrap.main .content-wrap .main-content .action-btns .btn {
   display: inline-block;
   padding: 15px 20px;
   box-sizing: border-box;
@@ -193,12 +220,15 @@ body::-webkit-scrollbar-thumb {
   font-size: 20px;
   border-radius: 0.3rem;
 }
-.app-wrap.main .content-wrap .main-content .btn-wrap .btn .far {
+.app-wrap.main .content-wrap .main-content .action-btns .btn .far {
   padding-right: 10px;
   box-sizing: border-box;
 }
-.app-wrap.main .content-wrap .main-content .btn-wrap .btn:hover {
+.app-wrap.main .content-wrap .main-content .action-btns .btn:hover {
   background-color: #2b4681;
+}
+.app-wrap.main .content-wrap .content {
+  min-height: 200vh;
 }
 .app-wrap.main .app-footer {
   color: rgba(255, 255, 255, 0.637);

@@ -31,13 +31,13 @@ html, body{
 
      .app-wrap.main{
          height: 100vh;
-         .app-container{
+        .app-container{
              position: relative;
              margin: 0 auto;
              width: 80%;
              max-width: 2000px;
              height: 100%;
-         }
+        }
          .menu-trigger-btn{
             position: absolute;
             left: 0; top: 0;
@@ -91,9 +91,10 @@ html, body{
                             box-sizing: border-box;
                             text-decoration: none;
                             color: #fff;
+                            font-size: 18px;
                             &:hover{
                                 background: rgba(255, 255, 255, 0.534);
-                                color: rgba(0, 0, 0, 0.753);
+                                color: rgba(10, 49, 65, 0.753);
                             }
                         }
                     }
@@ -104,6 +105,7 @@ html, body{
          .app-content{
             position: relative;
             padding-left: 210px;
+            height: 100%;
             .main-wrap{
                 position: relative;
                 padding-top: 60px; 
@@ -145,43 +147,70 @@ html, body{
 
          .content-wrap{
             height: 100%;
-            background: transparent;
             overflow: auto;
             .main-content{
-                height: 200%;
-                .banner{
-                    position: relative;
-                    .item{
-                        img{
-                        width: 100%;
-                        height: 300px;
-                        }
-                        &::after{
-                        position: absolute;
-                        content: "";
-                        display: block;
-                        left: 0;
-                        top: 0;
-                        width: 100%;
-                        height: 300px;
-                        background-color: rgba(0, 0, 0, 0.39);
-                        } 
+                height: 100%;
+            .banner{
+                position: relative;
+                .item{
+                    img{
+                    width: 100%;
+                    height: 300px;
                     }
+                    &::after{
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 300px;
+                    background-color: rgba(0, 0, 0, 0.39);
+                    } 
                 }
+            }  
 
-                .marquee{
-                    color: #fff;
-                    padding: 10px 0;
-                    box-sizing: border-box;
-                    a{
-                    color: #fff;
-                    text-decoration: none;
-                    padding: 0 10px;
-                    box-sizing: border-box;
-                    }
+            .marquee{
+                color: #fff;
+                padding: 10px 0;
+                box-sizing: border-box;
+                a{
+                color: #fff;
+                text-decoration: none;
+                padding: 0 10px;
+                box-sizing: border-box;
                 }
+            }
 
-                .btn-wrap{
+            .app-pop-up{
+                display: none;
+                .pop-up{
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                width: 800px;
+                height: 300px;
+                background-color: rgba(252, 253, 253, 0.918);
+                z-index: 7;
+                }
+                .pop-before{
+                    position: fixed;
+                    top: 0;left: 0;
+                    background-color:transparent;
+                    width: 100%;
+                    height: 100vh;
+                }
+                &.show {
+                    display: block;
+                }
+            }
+       
+            
+
+            .action-btns{
                     text-align: center;
                     .btn{
                         display: inline-block;
@@ -201,7 +230,12 @@ html, body{
                             background-color: #2b4681;
                         }
                     }
-                }
+            }
+            
+            }
+
+            .content{
+                min-height: 200vh;;
             }
          }
 
