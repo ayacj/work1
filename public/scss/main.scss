@@ -188,7 +188,7 @@ html, body{
                 bottom: 0;
                 top: 0;
                 margin: auto;
-                width: 800px;
+                width: 80%;
                 height: 300px;
                 background-color: rgba(255, 255, 255, 0.925);
                 z-index: 7;
@@ -198,6 +198,12 @@ html, body{
                     padding: 30px;
                     box-sizing: border-box;
                     background-image: url("/public/images/bg.jpg");
+                    color: #fff;
+                }
+                .pop-close{
+                    position: absolute;
+                    right:40px;
+                    top:30px;
                     color: #fff;
                 }
                 }

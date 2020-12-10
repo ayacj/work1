@@ -59,6 +59,9 @@
                                         <h1>公告</h1>
                                         <p></p>
                                     </div>
+                                    <div class="pop-close">
+                                        <i class="fas fa-times fa-2x"></i>
+                                    </div>
                                 </div>
                                 <div class="pop-before"></div>
                             </div>
@@ -99,7 +102,7 @@
             $(".app-pop-up").addClass("show");
           });
   
-          $('.marquee-close').on("click",function(){
+          $('.pop-close').on("click",function(){
             $(".app-pop-up").removeClass("show");
           });
 
