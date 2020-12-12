@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding:0;
-    background: url("/public/images/bg.jpg") center center fixed no-repeat;
+    background: url("../images/bg.jpg") center center fixed no-repeat;
     background-size: cover;
     }
 html, body{
@@ -154,7 +154,7 @@ html, body{
                 position: relative;
                 width: 100%;
                 height: 300px;
-                background-image: url("/public/images/banner.png");
+                background-image: url("../images/banner.png");
                 &::after{
                     position: absolute;
                     content: "";
@@ -197,7 +197,7 @@ html, body{
                     font-size: 30px;
                     padding: 30px;
                     box-sizing: border-box;
-                    background-image: url("/public/images/bg.jpg");
+                    background-image: url("../images/bg.jpg");
                     color: #fff;
                 }
                 .pop-close{

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("/public/images/bg.jpg") center center fixed no-repeat;
+  background: url("../images/bg.jpg") center center fixed no-repeat;
   background-size: cover;
 }
 
@@ -156,7 +156,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   width: 100%;
   height: 300px;
-  background-image: url("/public/images/banner.png");
+  background-image: url("../images/banner.png");
 }
 .app-wrap.main .content-wrap .main-content .banner::after {
   position: absolute;
@@ -199,7 +199,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 30px;
   padding: 30px;
   box-sizing: border-box;
-  background-image: url("/public/images/bg.jpg");
+  background-image: url("../images/bg.jpg");
   color: #fff;
 }
 .app-wrap.main .content-wrap .main-content .app-pop-up .pop-up .pop-close {
